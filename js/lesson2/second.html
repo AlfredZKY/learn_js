@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>learn js lesson2</title>
+
+<script>
+    function myFunctionFirst(){
+        document.getElementById("demo").innerHTML="我的第一个 JS 函数"
+    }
+</script>
+
+</head>
+<body>
+ 
+<p>JavaScript 能够直接写入HTML输出流中:</p>    
+
+<script>
+document.write("<h1>这是一个标题</h1>");
+document.write("<p>这是一个段落</p>");
+</script>
+
+<p>您只能在HTML输出流中使用<strong>document.write</strong>
+如果您在文档加载后使用它(比如在函数中)，会覆盖整个文档
+</p>
+
+<p id="demo" >一个段落</p>
+<button type="button" onclick="myFunctionFirst()">点击这里</button>
+<button type="button" onclick="myFunctionSecond()">点击这里</button>
+<p><b>注释:</b>myFunctionSecond 保存在名为"myScript.js"的外部文件中</p>
+<script src="myScript.js"></script>
+
+</body>
+</html>

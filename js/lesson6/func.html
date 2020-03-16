@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>learn js lesson6</title>
+</head>
+
+<body>
+
+    <p>点击这个按钮，来调用带参数的函数。</p>
+    <button onclick="myFunction('Harry Potter','Wizard')">点击这里</button>
+    <script>
+        function myFunction(name, job) {
+            alert("Welcome " + name + ", the " + job);
+        }
+    </script>
+
+    <p id="demo"></p>
+    <script>
+        function calcMul(a, b) {
+            return a * b;
+        }
+        document.getElementById("demo").innerHTML = calcMul(3, 4);
+    </script>
+
+</body>
+
+</html>
