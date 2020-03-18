@@ -1,0 +1,14 @@
+(function() {
+    'use strict';
+    function hook(object,attr){
+        var func = object[attr]
+        object[attr] = function(){
+            console.log("hooked",object,attr)
+            var ret = func.apply(object,arguments)
+            debugger
+            return ret
+        }
+    }
+    //hook(window,'btoa')
+    hook(JSON,'stringify')
+})();

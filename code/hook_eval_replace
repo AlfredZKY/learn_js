@@ -1,0 +1,19 @@
+// ==UserScript==
+// @name         hook eval
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        http://wenshu.court.gov.cn/
+// @run-at        document-start
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+    var _eval = window.eval;
+    window.eval = function(x){
+        console.log("过反调试")
+        _eval(x.replace("debugger;","  ;  "));
+    };
+})();
