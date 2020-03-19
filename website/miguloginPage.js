@@ -5197,31 +5197,29 @@ define("loginPage", ["lib/util/req_global_file", "lib/util/html", "lib/util/msg"
                             a
                     },
                     _ie6PngFix: m ? function () {
-                            for (var a, b, c, d, e = 0, f = p.defaults.path + "/skins/", g = this.DOM.wrap[0].getElementsByTagName("*"); e < g.length; e++)
-                                a = g[e],
-                                b = a.currentStyle.png,
-                                b && (c = f + b,
-                                    d = a.runtimeStyle,
-                                    d.backgroundImage = "none",
-                                    d.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + c + "',sizingMethod='crop')")
-                        } :
-                        a.noop,
+                        for (var a, b, c, d, e = 0, f = p.defaults.path + "/skins/", g = this.DOM.wrap[0].getElementsByTagName("*"); e < g.length; e++)
+                            a = g[e],
+                            b = a.currentStyle.png,
+                            b && (c = f + b,
+                                d = a.runtimeStyle,
+                                d.backgroundImage = "none",
+                                d.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + c + "',sizingMethod='crop')")
+                    } : a.noop,
                     _ie6SelectFix: m ? function () {
-                            var a = this.DOM.wrap,
-                                b = a[0],
-                                c = o + "iframeMask",
-                                d = a[c],
-                                e = b.offsetWidth,
-                                f = b.offsetHeight;
-                            e += "px",
-                                f += "px",
-                                d ? (d.style.width = e,
-                                    d.style.height = f) : (d = b.appendChild(document.createElement("iframe")),
-                                    a[c] = d,
-                                    d.src = "about:blank",
-                                    d.style.cssText = "position:absolute;z-index:-1;left:0;top:0;filter:alpha(opacity=0);width:" + e + ";height:" + f)
-                        } :
-                        a.noop,
+                        var a = this.DOM.wrap,
+                            b = a[0],
+                            c = o + "iframeMask",
+                            d = a[c],
+                            e = b.offsetWidth,
+                            f = b.offsetHeight;
+                        e += "px",
+                            f += "px",
+                            d ? (d.style.width = e,
+                                d.style.height = f) : (d = b.appendChild(document.createElement("iframe")),
+                                a[c] = d,
+                                d.src = "about:blank",
+                                d.style.cssText = "position:absolute;z-index:-1;left:0;top:0;filter:alpha(opacity=0);width:" + e + ";height:" + f)
+                    } : a.noop,
                     _runScript: function (a) {
                         for (var b, c = 0, d = 0, e = a.getElementsByTagName("script"), f = e.length, g = []; f > c; c++)
                             "text/dialog" === e[c].type && (g[d] = e[c].innerHTML,
