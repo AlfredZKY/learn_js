@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script type="text/javascript" scr="/jquery/jquery.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("button").click(function(){
+                    alert($("input:text").val());
+                });
+            });
+        </script>
+    </head>
+    <body>
+        FirstName: <input type="text" name="Fuser" value="Hello" /><br />
+        LastName: <input type="text" name="Luser" value="Hello" /><br /><br />
+        <button>获取第一个文本域的值</button>
+    </body>
+</html>

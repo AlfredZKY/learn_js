@@ -53,3 +53,36 @@ console.log('-------------------md5------------------------');
 
 let encrtpt_md5 = CryptoJS.MD5(value);
 console.log(encrtpt_md5.toString());
+
+console.log('-------------------aes------------------------');
+// learn aes(advanced encryption standard)
+// Aes：支持三种长度的密钥:128位，192位，256位
+// 填充模式：对明文进行填充，填充模式如下
+// NoPadding,PKCS7Padding,ZeroPadding,AnsiX923,Iso10126,Iso97971
+// 加密模式：AES，CBC，ECB，CTR，CFB，OFB
+
+var key="ABC123456789";
+var iv="1234567812345678";
+
+function encryptaes(text){
+    return CryptoJS.AES.encrypt(text,CryptoJS.enc.Utf8.parse(key),{
+        iv:CryptoJS.enc.Utf8.parse(iv),
+        mode:CryptoJS.mode.CBC,
+        padding:CryptoJS.pad.Pkcs7
+    })
+}
+
+function decryptaes(text){
+    var result = CryptoJS.AES.decrypt(text,CryptoJS.enc.Utf8.parse(key),{
+        iv:CryptoJS.enc.Utf8.parse(iv),
+        mode:CryptoJS.mode.CBC,
+        padding:CryptoJS.pad.Pkcs7
+    })
+    return result.toString(CryptoJS.enc.Utf8)
+}
+
+var text = "zky";
+var encoded = encryptaes(text);
+console.log(encoded.toString());
+console.log(decryptaes(encoded));
+
