@@ -12,4 +12,4 @@ Encrypt = function (t) {
     return CryptoJS.enc.Base64.stringify(l.ciphertext)
 }
 
-console.log(Encrypt('{"body":{},"head":{"userCode":null,"channelCode":"101","transTime":1585064180369,"transToken":"","customerId":null,"transSerialNumber":""}}'));
+console.log(Encrypt('"{"body":{"loginMethod":"1","name":"13734567890","password":"dadasdas"},"head":{"userCode":null,"channelCode":"101","transTime":1585064667682,"transToken":"","customerId":null,"transSerialNumber":""}}"'))
