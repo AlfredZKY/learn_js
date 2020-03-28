@@ -86,3 +86,16 @@ var encoded = encryptaes(text);
 console.log(encoded.toString());
 console.log(decryptaes(encoded));
 
+
+function encrypts(word) {
+    var key = CryptoJS.enc.Utf8.parse("8ujhbnjhgfvb12bh");
+    var srcs = CryptoJS.enc.Utf8.parse(word);
+    var encrypted = CryptoJS.AES.encrypt(srcs, key, {
+        mode: CryptoJS.mode.ECB,
+        padding: CryptoJS.pad.Pkcs7
+    });
+    return encrypted.toString();
+}
+
+console.log('-----------------------------------------')
+console.log(encrypts('111111'));
