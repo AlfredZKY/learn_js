@@ -1,9 +1,6 @@
-window = global;
-navigator = {};
-
 (function (e, n) {
-    "object" == typeof exports ? module.exports = exports = n() : "function" == typeof define && define.amd ? define([], n) : e.CryptoJS = n()
-}(this, function () {
+    e.CryptoJS = n()
+}(global, function () {
     var e = e || function (e, n) {
         var a = Object.create || function () {
                 function e() {}
