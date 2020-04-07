@@ -1,0 +1,469 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200407.202408.6423.0.001.json",
+    "dumpEventTime": "2020-04-07T20:24:08Z",
+    "dumpEventTimeStamp": "1586262248037",
+    "processId": 6423,
+    "threadId": null,
+    "cwd": "/home/zky/project/learn_js",
+    "commandLine": [
+      "/home/zky/node/v13.9.0/bin/node",
+      "100js/去哪网/source.js"
+    ],
+    "nodejsVersion": "v13.9.0",
+    "glibcVersionRuntime": "2.27",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "13.9.0",
+      "v8": "7.9.317.25-node.28",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "openssl": "1.1.1d",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.9.0/node-v13.9.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.9.0/node-v13.9.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "5.3.0-45-generic",
+    "osVersion": "#37~18.04.1-Ubuntu SMP Fri Mar 27 15:58:10 UTC 2020",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz",
+        "speed": 3251,
+        "user": 2606500,
+        "nice": 46900,
+        "sys": 2407700,
+        "idle": 39664200,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz",
+        "speed": 2841,
+        "user": 2392500,
+        "nice": 800,
+        "sys": 2584300,
+        "idle": 39677900,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz",
+        "speed": 2648,
+        "user": 2719800,
+        "nice": 2700,
+        "sys": 2255000,
+        "idle": 39770900,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz",
+        "speed": 2770,
+        "user": 2732800,
+        "nice": 35100,
+        "sys": 2305400,
+        "idle": 39673400,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "enp3s0",
+        "internal": false,
+        "mac": "10:bf:48:62:e1:2e",
+        "address": "192.168.10.228",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "vmnet1",
+        "internal": false,
+        "mac": "00:50:56:c0:00:01",
+        "address": "192.168.34.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "vmnet8",
+        "internal": false,
+        "mac": "00:50:56:c0:00:08",
+        "address": "192.168.191.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "enp3s0",
+        "internal": false,
+        "mac": "10:bf:48:62:e1:2e",
+        "address": "fe80::75d2:7cad:8e62:d8b8",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 2
+      },
+      {
+        "name": "vmnet1",
+        "internal": false,
+        "mac": "00:50:56:c0:00:01",
+        "address": "fe80::250:56ff:fec0:1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 4
+      },
+      {
+        "name": "vmnet8",
+        "internal": false,
+        "mac": "00:50:56:c0:00:08",
+        "address": "fe80::250:56ff:fec0:8",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 5
+      }
+    ],
+    "host": "zky"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000b3cae5",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000a06bdb",
+      "symbol": "node::OnFatalError(char const*, char const*) [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b74cee",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b75069",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d23575",
+      "symbol": " [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d5423a",
+      "symbol": "v8::internal::EvacuateNewSpaceVisitor::Visit(v8::internal::HeapObject, int) [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d5b7d0",
+      "symbol": "void v8::internal::LiveObjectVisitor::VisitBlackObjectsNoFail<v8::internal::EvacuateNewSpaceVisitor, v8::internal::MajorNonAtomicMarkingState>(v8::internal::MemoryChunk*, v8::internal::MajorNonAtomicMarkingState*, v8::internal::EvacuateNewSpaceVisitor*, v8::internal::LiveObjectVisitor::IterationMode) [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d693b8",
+      "symbol": "v8::internal::FullEvacuator::RawEvacuatePage(v8::internal::MemoryChunk*, long*) [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d4e55e",
+      "symbol": "v8::internal::Evacuator::EvacuatePage(v8::internal::MemoryChunk*) [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d4e824",
+      "symbol": "v8::internal::PageEvacuationTask::RunInParallel(v8::internal::ItemParallelJob::Task::Runner) [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d431e5",
+      "symbol": "v8::internal::ItemParallelJob::Task::RunInternal() [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d435f4",
+      "symbol": "v8::internal::ItemParallelJob::Run() [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d5cc87",
+      "symbol": "void v8::internal::MarkCompactCollectorBase::CreateAndExecuteEvacuationTasks<v8::internal::FullEvacuator, v8::internal::MarkCompactCollector>(v8::internal::MarkCompactCollector*, v8::internal::ItemParallelJob*, v8::internal::MigrationObserver*, long) [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d6bc34",
+      "symbol": "v8::internal::MarkCompactCollector::EvacuatePagesInParallel() [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d6c84a",
+      "symbol": " [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d71b97",
+      "symbol": "v8::internal::MarkCompactCollector::CollectGarbage() [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d31b99",
+      "symbol": "v8::internal::Heap::MarkCompact() [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d3279b",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d332b5",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d35d8c",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000cfc964",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000001049c8e",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/home/zky/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x00000000013cd419",
+      "symbol": " [/home/zky/node/v13.9.0/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 342159360,
+    "totalCommittedMemory": 339973200,
+    "usedMemory": 324679928,
+    "availableMemory": 184284760,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33328,
+        "capacity": 33040,
+        "used": 33040,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 31865472,
+        "capacity": 16758784,
+        "used": 16726304,
+        "available": 32480
+      },
+      "old_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "code_space": {
+        "memorySize": 430080,
+        "committedMemory": 174720,
+        "capacity": 154464,
+        "used": 154464,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 266240,
+        "committedMemory": 253216,
+        "capacity": 176880,
+        "used": 176880,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 307597312,
+        "committedMemory": 307597312,
+        "capacity": 307586456,
+        "used": 307586456,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 184252280,
+        "used": 0,
+        "available": 184252280
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 22.6273,
+    "kernelCpuSeconds": 0.612738,
+    "cpuConsumptionPercent": 101.044,
+    "maxRss": 2382241792,
+    "pageFaults": {
+      "IORequired": 11,
+      "IONotRequired": 655230
+    },
+    "fsActivity": {
+      "reads": 2392,
+      "writes": 24
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 11.4056,
+    "kernelCpuSeconds": 0.584698,
+    "cpuConsumptionPercent": 52.1319,
+    "fsActivity": {
+      "reads": 2392,
+      "writes": 24
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "USER": "zky",
+    "LANGUAGE": "zh_CN:zh",
+    "TEXTDOMAIN": "im-config",
+    "XDG_SEAT": "seat0",
+    "XDG_SESSION_TYPE": "x11",
+    "SSH_AGENT_PID": "1856",
+    "SHLVL": "1",
+    "QT4_IM_MODULE": "xim",
+    "HOME": "/home/zky",
+    "DESKTOP_SESSION": "ubuntu",
+    "GTK_MODULES": "gail:atk-bridge",
+    "GNOME_SHELL_SESSION_MODE": "ubuntu",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "IM_CONFIG_PHASE": "2",
+    "LOGNAME": "zky",
+    "GTK_IM_MODULE": "ibus",
+    "USERNAME": "zky",
+    "XDG_SESSION_ID": "1",
+    "WINDOWPATH": "1",
+    "PATH": "/home/zky/.local/bin:/home/zky/node/v13.9.0/bin:/usr/local/cuda-10.2/bin:/home/zky/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/bin/v2rayL/v2rayLui",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "DISPLAY": ":0",
+    "LANG": "zh_CN.UTF-8",
+    "XDG_CURRENT_DESKTOP": "Unity",
+    "XDG_SESSION_DESKTOP": "ubuntu",
+    "XMODIFIERS": "@im=ibus",
+    "XAUTHORITY": "/run/user/1000/gdm/Xauthority",
+    "SSH_AUTH_SOCK": "/run/user/1000/keyring/ssh",
+    "SHELL": "/bin/bash",
+    "QT_ACCESSIBILITY": "1",
+    "GDMSESSION": "ubuntu",
+    "TEXTDOMAINDIR": "/usr/share/locale/",
+    "GPG_AGENT_INFO": "/run/user/1000/gnupg/S.gpg-agent:0:1",
+    "XDG_VTNR": "1",
+    "QT_IM_MODULE": "ibus",
+    "PWD": "/home/zky",
+    "CLUTTER_IM_MODULE": "xim",
+    "XDG_DATA_DIRS": "/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop",
+    "XDG_CONFIG_DIRS": "/etc/xdg/xdg-ubuntu:/etc/xdg",
+    "GNOME_DESKTOP_SESSION_ID": "this-is-deprecated",
+    "XDG_MENU_PREFIX": "gnome-",
+    "SESSION_MANAGER": "local/zky:@/tmp/.ICE-unix/1748,unix/zky:/tmp/.ICE-unix/1748",
+    "GIO_LAUNCHED_DESKTOP_FILE": "/usr/share/applications/code.desktop",
+    "GIO_LAUNCHED_DESKTOP_FILE_PID": "5245",
+    "GJS_DEBUG_OUTPUT": "stderr",
+    "GJS_DEBUG_TOPICS": "JS ERROR;JS LOG",
+    "CHROME_DESKTOP": "code-url-handler.desktop",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"zh-cn\",\"availableLanguages\":{\"*\":\"zh-cn\"},\"_languagePackId\":\"be1690a3901ca75683b8e07c42c9248b.zh-cn\",\"_translationsConfigFile\":\"/home/zky/.config/Code/clp/be1690a3901ca75683b8e07c42c9248b.zh-cn/tcf.json\",\"_cacheRoot\":\"/home/zky/.config/Code/clp/be1690a3901ca75683b8e07c42c9248b.zh-cn\",\"_resolvedLanguagePackCoreLocation\":\"/home/zky/.config/Code/clp/be1690a3901ca75683b8e07c42c9248b.zh-cn/fe22a9645b44368865c0ba92e2fb881ff1afce94\",\"_corruptedFile\":\"/home/zky/.config/Code/clp/be1690a3901ca75683b8e07c42c9248b.zh-cn/corrupted.info\",\"_languagePackSupport\":true}",
+    "VSCODE_NODE_CACHED_DATA_DIR": "/home/zky/.config/Code/CachedData/fe22a9645b44368865c0ba92e2fb881ff1afce94",
+    "VSCODE_LOGS": "/home/zky/.config/Code/logs/20200407T200434",
+    "VSCODE_IPC_HOOK": "/run/user/1000/vscode-5c67867e-1.43.1-main.sock",
+    "VSCODE_PID": "5245",
+    "LD_LIBRARY_PATH": "/usr/local/cuda-10.2/lib64",
+    "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+    "LESSOPEN": "| /usr/bin/lesspipe %s",
+    "LS_COLORS": "",
+    "_": "/usr/share/code/code",
+    "AMD_ENTRYPOINT": "vs/workbench/services/extensions/node/extensionHostProcess",
+    "PIPE_LOGGING": "true",
+    "VERBOSE_LOGGING": "true",
+    "VSCODE_IPC_HOOK_EXTHOST": "/tmp/vscode-ipc-cab85131-a5fe-487b-ab45-f167f463b3d1.sock",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "VSCODE_LOG_STACK": "false",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 16777216,
+      "hard": 16777216
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 95751,
+      "hard": 95751
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2"
+  ]
+}
