@@ -1,6 +1,11 @@
-window = {
-    href: "http://tool.liumingye.cn/music/"
+window =global;
+
+var location = {
+    href: "http://tool.liumingye.cn/music/",
+    protocol:"http"
 }
+
+window.location = location;
 
 global.atob = require("atob");
 
@@ -212,5 +217,9 @@ function getData(text, page, searchType) {
     return "data=" + encode("text=" + text + "&page=" + page + "&type=" + searchType);
 }
 
+var cryptoJS = require('crypto-js');
+md5 = function(s){
+    return cryptoJS.MD5(s).toString();
+}
 
 console.log(getData("盗将行 - 花粥/马雨阳", 1, "migu"));
