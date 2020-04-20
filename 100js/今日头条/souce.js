@@ -477,6 +477,7 @@ TAC("484e4f4a403f524300101e172f68af3071ba554d0000000000000000c08c8c020025806d442
 var o = {
     url: "https://www.toutiao.com/toutiao/api/pc/feed/?category=news_hot&utm_source=toutiao&widen=1&max_behot_time=0&max_behot_time_tmp=0&tadrequire=true&as=A1C5EEF9F2AF36F&cp=5E920F63260F1E1"
 }
-signature = window.byted_acrawler.sign(o);
+signature = window.byted_acrawler && window.byted_acrawler.sign ? window.byted_acrawler.sign(o) : ""
+// signature = window.byted_acrawler.sign(o);
 console.log('signature:', signature);
 console.log('url:\n', o.url + '&signature=' + signature);
