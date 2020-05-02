@@ -1,0 +1,15 @@
+{
+    "editor.mouseWheelZoom": true,
+	"editor.rulers":[120],
+	"editor.tabSize": 4,
+	"editor.renderLineHighlight": "all",
+	"editor.renderWhitespace": "all",
+	"workbench.editor.enablePreview":false,
+    "workbench.statusBar.visible": true,
+	"workbench.colorCustomizations": {
+        "editorLineNumber.foreground": "#3d40dda9",
+        "editorGutter.background": "#c0e683b6",
+        "editorCursor.foreground": "#d41313",
+	},
+    "highlight-icemode.borderColor": "red",
+}

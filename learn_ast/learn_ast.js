@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 const esprima = require('/Volumes/mac_store/project/learn_js/js_refuse/node_modules/esprima'); //生成语法树
 const esttraverse = require('/Volumes/mac_store/project/learn_js/js_refuse/node_modules/estraverse'); //遍历语法树
 const escodegen = require('/Volumes/mac_store/project/learn_js/js_refuse/node_modules/escodegen'); //语法树转代码
@@ -53,7 +52,7 @@ var _0x3e69 = function (_0x2f2d58, _0x245477) {
 // console.log(ast);
 // var tree = esprima.parse(code);
 // console.log(tree);
->>>>>>> b6e8130f2bd95edd3703d80313fc584e38af91eb
+
 
 //生成语法树
 const parse = require('@babel/parser');
@@ -84,7 +83,7 @@ function decrypt(ast){
     })
 }
 
-<<<<<<< HEAD
+
 function callToStr(path) {
     let node = path.node
     // decryptStrFnName即_0xd1a5
@@ -112,7 +111,7 @@ function (err,code) {
 });
 
 
-=======
+
 // esttraverse.traverse(ast,{
 //     enter:function (node) {
 //         node.kind = "var";
@@ -125,4 +124,4 @@ function (err,code) {
 // console.log('-------------------------------------------');
 // const transfromCode = escodegen.generate(ast);
 // console.log(transfromCode);
->>>>>>> b6e8130f2bd95edd3703d80313fc584e38af91eb
+
