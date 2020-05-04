@@ -102,7 +102,11 @@ function traverse_all_callexpress(ast){
         },
     })
 }
-
+// 一:遍历所有的CallExpression节点
+// 二:判断node.callee和node.callee.name是否是自己指定的函数
+// 三:调用本地的函数 _0X5C3A，赋予实参，并计算出结果。
+// 四:将计算出来的结果生成一个对应的节点，并替换掉当前的节点。
+// 五。替换结束后，将处理后的AST再转换成源代码，并保持到新的文件中去。
 function replace_function_to_string(path){
     // 对节点进行处理
     const node = path.node;

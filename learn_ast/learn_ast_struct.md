@@ -25,3 +25,4 @@
     - 如何删除节点，使用系统的delete方法 `delete path.node.init;`删除的init节点
     - 访问子节点，如果想得到初始化的值
         `const node = path.node;const value=node.init.value;console.log(value);`
+
